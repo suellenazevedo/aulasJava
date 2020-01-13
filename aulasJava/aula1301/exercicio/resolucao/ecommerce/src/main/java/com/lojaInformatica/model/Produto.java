@@ -1,11 +1,17 @@
-package com.atividade.concessionaria.Model;
+package com.lojaInformatica.model;
 
 public class Produto {
 	
-	private String nome;
-	private double preco;
 	
-	public Produto(String nome, double preco) {
+	private String nome;
+	private float preco;
+	
+	
+	public Produto() {
+		super();
+	}
+	
+	public Produto(String nome, float preco) {
 		super();
 		this.nome = nome;
 		this.preco = preco;
@@ -19,13 +25,16 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public double getPreco() {
+	public float getPreco() {
 		return preco;
 	}
 
-	public void setPreco(double preco) {
+	public void setPreco(float preco) {
 		this.preco = preco;
 	}
+	
+
+
 	
 	
 }
